@@ -82,6 +82,7 @@ $(document).ready(function(){
         });
     };
 
+
     validateForms('#consultation-form');
     validateForms('#consultation form');
     validateForms('#order form');
@@ -90,6 +91,8 @@ $(document).ready(function(){
 
     $('form').submit(function(e) {
         e.preventDefault();
+        let $form = $(this);
+        if(! $form.valid()) return false; 
         $.ajax({
             type: "POST",
             url: "mailer/smart.php",

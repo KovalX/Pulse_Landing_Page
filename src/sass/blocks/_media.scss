@@ -170,18 +170,19 @@
         }
     }
     .advantages {
-        padding-top: 50px 0 40px 0;
+        padding: 45px 0 40px 0;
         &__header {
             font-size: 22px;
         }
         &__items {
-            margin-top: 50px;
+            margin-top: 40px;
         }
         &__item {
             flex-basis: 28%;
             h3 {
                 font-size: 15px;
                 margin-top: 26px;
+                line-height: 1.1;
             }
         }
         &__text {
@@ -204,6 +205,7 @@
         }
     }
     .catalog {
+        padding-bottom: 40px;
         .title {
             font-size: 22px;
         }
@@ -217,12 +219,23 @@
         &__content {
             justify-content: center;
         }
+        &-item {
+            hr {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            &__price {
+                font-size: 15px;
+            }
+        }
     }
     .feed {
+        padding-bottom: 45px;
         .title {
             font-size: 22px;
         }
         &__item {
+            margin-top: 60px;
             flex-direction: column;
             align-items: center;
         }
@@ -235,6 +248,10 @@
         }
         &__descr {
             font-size: 15px;
+            padding: 0 5px;
+        }
+        &__count {
+            text-align: center;
         }
     }
     .footer {
@@ -250,6 +267,34 @@
             font-size: 16px;
             margin-bottom: 15px;
         }
-        
+    }
+    .overlay {
+        .modal {
+            width: 300px;
+            padding: 30px 15px 20px 15px;
+            &__close {
+                top: -36px;
+                right: 0;
+            }
+            &__subtitle {
+                font-size: 16px;
+            }
+            &__descr {
+                font-size: 13px;
+            }
+            .feed-form {
+                width: 270px;
+                input {
+                    width: 270px;
+                }
+            }
+        }
+    }
+    .pageup {
+        bottom: 40px;
+        right: 12px;
+        width: 30px;
+        height: 30px;
+        opacity: 0.5;
     }
 }
